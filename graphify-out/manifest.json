@@ -3,6 +3,10 @@
     "mtime": 1779993447.4017394,
     "hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
+  "C:\\projects\\salon-haven-main\\next-env.d.ts": {
+    "mtime": 1779993628.3722982,
+    "hash": "29f60a376e12bf72b67d4994fcc84214"
+  },
   "C:\\projects\\salon-haven-main\\next.config.ts": {
     "mtime": 1779993447.4017394,
     "hash": "9b77af189a21a7a64e4bd7a426f64176"
@@ -19,21 +23,57 @@
     "mtime": 1779993447.5599194,
     "hash": "917bad776deef3d7a1088fe9a2b718eb"
   },
+  "C:\\projects\\salon-haven-main\\src\\app\\about\\page.tsx": {
+    "mtime": 1779995576.820322,
+    "hash": "9c69da2da4574a8af7ae48a293f7441a"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\auth\\page.tsx": {
+    "mtime": 1779996751.988381,
+    "hash": "5900c3600f96907a32fb5edcf40cd9b7"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\cities\\page.tsx": {
+    "mtime": 1779995564.1034305,
+    "hash": "1c742ac4ee3962d2cf83ea699ea867d6"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\contact\\page.tsx": {
+    "mtime": 1779995677.3881114,
+    "hash": "4e77b161aa4631561fb2d6155f091485"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\privacy\\page.tsx": {
+    "mtime": 1779995770.7222817,
+    "hash": "6e4cbf6a99d7e4c682379e6d3d82e5b8"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\salons\\page.tsx": {
+    "mtime": 1779995253.7877202,
+    "hash": "9b9c6c2ae003eb63c494e6f09555dbf4"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\salons\\[slug]\\page.tsx": {
+    "mtime": 1779995282.7176595,
+    "hash": "79980768e8744fbacd73709e94d90e81"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\services\\page.tsx": {
+    "mtime": 1779995453.5473688,
+    "hash": "c64df929628347400d86a8c8350b48a9"
+  },
+  "C:\\projects\\salon-haven-main\\src\\app\\terms\\page.tsx": {
+    "mtime": 1779995873.6236634,
+    "hash": "22f50a3ef69c2eeded5eb1eed10503eb"
+  },
   "C:\\projects\\salon-haven-main\\src\\components\\common\\CitiesSection.tsx": {
     "mtime": 1779993447.5916235,
     "hash": "deae3e4fcedfa0e1c439b4ed8fc1c702"
   },
   "C:\\projects\\salon-haven-main\\src\\components\\common\\CTASection.tsx": {
-    "mtime": 1779993447.575691,
-    "hash": "cfbac15e7a15aec983350cd2d3084a21"
+    "mtime": 1779996034.3912094,
+    "hash": "53a24f745102e4a2f5dde5bc9048cf67"
   },
   "C:\\projects\\salon-haven-main\\src\\components\\common\\Footer.tsx": {
-    "mtime": 1779993447.5916235,
-    "hash": "7d4bc5b3b777e28859c1f832b0a9af88"
+    "mtime": 1779996894.3199153,
+    "hash": "c87ac16f6cca633bbbb40b89010d973b"
   },
   "C:\\projects\\salon-haven-main\\src\\components\\common\\Header.tsx": {
-    "mtime": 1779993447.6073892,
-    "hash": "f00b4bd72057295d9660137c7570f479"
+    "mtime": 1779996642.0440316,
+    "hash": "06c0e734b66c109a13165cad30b17ef1"
   },
   "C:\\projects\\salon-haven-main\\src\\components\\common\\HeroSection.tsx": {
     "mtime": 1779993447.6073892,
@@ -70,6 +110,10 @@
   "C:\\projects\\salon-haven-main\\src\\lib\\constants.ts": {
     "mtime": 1779993447.701573,
     "hash": "795767ca5ceb38f27104680a5f4a094b"
+  },
+  "C:\\projects\\salon-haven-main\\src\\lib\\data.ts": {
+    "mtime": 1779994975.6533234,
+    "hash": "ea32006e58a63fb0b46534f525a9d6a3"
   },
   "C:\\projects\\salon-haven-main\\src\\lib\\utils.ts": {
     "mtime": 1779993447.701573,
