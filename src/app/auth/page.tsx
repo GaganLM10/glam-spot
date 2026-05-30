@@ -3,16 +3,31 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Eye, EyeOff, Scissors, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useMutation } from "@tanstack/react-query";
+import {
+  Eye,
+  EyeOff,
+  Scissors,
+  ArrowRight,
+  Loader2,
+  AlertCircle,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_NAME } from "@/lib/constants";
+import { useAuthStore } from "@/lib/auth-store";
+import { authApi } from "@/lib/api";
 
 type Tab = "login" | "register";
 
 export default function AuthPage() {
+  const router = useRouter();
+  const setAuth = useAuthStore((state) => state.setAuth);
+
   const [tab, setTab] = useState<Tab>("login");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   // Login form state
   const [loginForm, setLoginForm] = useState({ email: "", password: "" });
@@ -28,17 +43,53 @@ export default function AuthPage() {
     role: "CUSTOMER",
   });
 
+  // Login Mutation
+  const loginMutation = useMutation({
+    mutationFn: authApi.login,
+    onSuccess: (data) => {
+      setAuth(data.user, data.accessToken);
+      router.push("/");
+    },
+    onError: (err: any) => {
+      setErrorMsg(err.response?.data?.message || "Invalid email or password.");
+    },
+  });
+
+  // Register Mutation
+  const registerMutation = useMutation({
+    mutationFn: authApi.register,
+    onSuccess: async (_, variables) => {
+      // Auto login after successful registration
+      loginMutation.mutate({
+        email: variables.email,
+        password: variables.password,
+      });
+    },
+    onError: (err: any) => {
+      setErrorMsg(
+        err.response?.data?.message || "Registration failed. Try again.",
+      );
+    },
+  });
+
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // will wire to API later
-    console.log("Login:", loginForm);
+    setErrorMsg("");
+    loginMutation.mutate(loginForm);
   };
 
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault();
-    // will wire to API later
-    console.log("Register:", registerForm);
+    setErrorMsg("");
+    if (registerForm.password !== registerForm.confirmPassword) {
+      setErrorMsg("Passwords do not match.");
+      return;
+    }
+    const { confirmPassword, ...dto } = registerForm;
+    registerMutation.mutate(dto);
   };
+
+  const isLoading = loginMutation.isPending || registerMutation.isPending;
 
   return (
     <div className="min-h-screen bg-zinc-50 flex items-center justify-center px-4 py-16">
@@ -65,7 +116,11 @@ export default function AuthPage() {
             {(["login", "register"] as Tab[]).map((t) => (
               <button
                 key={t}
-                onClick={() => setTab(t)}
+                onClick={() => {
+                  setTab(t);
+                  setErrorMsg("");
+                }}
+                disabled={isLoading}
                 className={`flex-1 py-4 text-sm font-medium transition-colors relative ${
                   tab === t
                     ? "text-rose-500"
@@ -85,6 +140,14 @@ export default function AuthPage() {
 
           {/* Forms */}
           <div className="p-6">
+            {/* Error Message */}
+            {errorMsg && (
+              <div className="mb-4 p-3 bg-red-50 border border-red-100 text-red-600 rounded-xl text-xs flex items-start gap-2 animate-shake">
+                <AlertCircle size={15} className="shrink-0 mt-0.5" />
+                <span>{errorMsg}</span>
+              </div>
+            )}
+
             <AnimatePresence mode="wait">
               {tab === "login" ? (
                 <motion.form
@@ -104,6 +167,7 @@ export default function AuthPage() {
                     <input
                       type="email"
                       required
+                      disabled={isLoading}
                       value={loginForm.email}
                       onChange={(e) =>
                         setLoginForm({ ...loginForm, email: e.target.value })
@@ -130,6 +194,7 @@ export default function AuthPage() {
                       <input
                         type={showPassword ? "text" : "password"}
                         required
+                        disabled={isLoading}
                         value={loginForm.password}
                         onChange={(e) =>
                           setLoginForm({
@@ -156,9 +221,16 @@ export default function AuthPage() {
 
                   <Button
                     type="submit"
+                    disabled={isLoading}
                     className="w-full bg-rose-500 hover:bg-rose-600 text-white flex items-center justify-center gap-2 py-5"
                   >
-                    Login <ArrowRight size={15} />
+                    {isLoading ? (
+                      <Loader2 size={16} className="animate-spin" />
+                    ) : (
+                      <>
+                        Login <ArrowRight size={15} />
+                      </>
+                    )}
                   </Button>
 
                   <p className="text-center text-xs text-zinc-400">
@@ -191,6 +263,7 @@ export default function AuthPage() {
                       <input
                         type="text"
                         required
+                        disabled={isLoading}
                         value={registerForm.firstName}
                         onChange={(e) =>
                           setRegisterForm({
@@ -209,6 +282,7 @@ export default function AuthPage() {
                       <input
                         type="text"
                         required
+                        disabled={isLoading}
                         value={registerForm.lastName}
                         onChange={(e) =>
                           setRegisterForm({
@@ -230,6 +304,7 @@ export default function AuthPage() {
                     <input
                       type="email"
                       required
+                      disabled={isLoading}
                       value={registerForm.email}
                       onChange={(e) =>
                         setRegisterForm({
@@ -249,6 +324,7 @@ export default function AuthPage() {
                     </label>
                     <input
                       type="tel"
+                      disabled={isLoading}
                       value={registerForm.phone}
                       onChange={(e) =>
                         setRegisterForm({
@@ -274,6 +350,7 @@ export default function AuthPage() {
                         <button
                           key={option.value}
                           type="button"
+                          disabled={isLoading}
                           onClick={() =>
                             setRegisterForm({
                               ...registerForm,
@@ -301,6 +378,7 @@ export default function AuthPage() {
                       <input
                         type={showPassword ? "text" : "password"}
                         required
+                        disabled={isLoading}
                         value={registerForm.password}
                         onChange={(e) =>
                           setRegisterForm({
@@ -334,6 +412,7 @@ export default function AuthPage() {
                       <input
                         type={showConfirm ? "text" : "password"}
                         required
+                        disabled={isLoading}
                         value={registerForm.confirmPassword}
                         onChange={(e) =>
                           setRegisterForm({
@@ -364,19 +443,30 @@ export default function AuthPage() {
                   <Button
                     type="submit"
                     disabled={
-                      registerForm.password !== registerForm.confirmPassword &&
-                      registerForm.confirmPassword.length > 0
+                      isLoading ||
+                      (registerForm.password !== registerForm.confirmPassword &&
+                        registerForm.confirmPassword.length > 0)
                     }
                     className="w-full bg-rose-500 hover:bg-rose-600 text-white flex items-center justify-center gap-2 py-5 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Create Account <ArrowRight size={15} />
+                    {isLoading ? (
+                      <Loader2 size={16} className="animate-spin" />
+                    ) : (
+                      <>
+                        Create Account <ArrowRight size={15} />
+                      </>
+                    )}
                   </Button>
 
                   <p className="text-center text-xs text-zinc-400">
                     Already have an account?{" "}
                     <button
                       type="button"
-                      onClick={() => setTab("login")}
+                      onClick={() => {
+                        setTab("login");
+                        setErrorMsg("");
+                      }}
+                      disabled={isLoading}
                       className="text-rose-500 hover:text-rose-600 font-medium"
                     >
                       Login

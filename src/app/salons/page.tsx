@@ -1,11 +1,13 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Search, MapPin, Star, SlidersHorizontal, X } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { Search, MapPin, Star, SlidersHorizontal, X, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { SALONS_DATA, CITIES_DATA } from "@/lib/data";
+import { CITIES_DATA } from "@/lib/data";
+import { salonsApi } from "@/lib/api";
 
 const CATEGORIES = [
   "All",
@@ -20,55 +22,63 @@ const RATINGS = ["All", "4.9+", "4.7+", "4.5+"];
 const SORT_OPTIONS = [
   "Relevance",
   "Rating",
-  "Price: Low to High",
-  "Price: High to Low",
 ];
 
 export default function SalonsPage() {
   const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [selectedCity, setSelectedCity] = useState("All");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedRating, setSelectedRating] = useState("All");
   const [sortBy, setSortBy] = useState("Relevance");
   const [showFilters, setShowFilters] = useState(false);
 
+  // Debounce search input
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedSearch(search);
+    }, 400);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [search]);
+
   const cities = ["All", ...CITIES_DATA.map((c) => c.name)];
 
-  const filtered = useMemo(() => {
-    let result = [...SALONS_DATA];
+  // Parse rating filter
+  const minRating = selectedRating !== "All" 
+    ? parseFloat(selectedRating.replace("+", "")) 
+    : undefined;
 
-    if (search.trim()) {
-      const q = search.toLowerCase();
-      result = result.filter(
-        (s) =>
-          s.name.toLowerCase().includes(q) ||
-          s.city.toLowerCase().includes(q) ||
-          s.category.toLowerCase().includes(q) ||
-          s.tags.some((t) => t.toLowerCase().includes(q)),
-      );
-    }
+  // React Query fetch
+  const { data, isLoading, isError } = useQuery({
+    queryKey: [
+      "salons", 
+      debouncedSearch, 
+      selectedCity, 
+      selectedCategory, 
+      minRating
+    ],
+    queryFn: () => salonsApi.search({
+      search: debouncedSearch || undefined,
+      city: selectedCity !== "All" ? selectedCity : undefined,
+      category: selectedCategory !== "All" ? selectedCategory : undefined,
+      minRating,
+    }),
+  });
 
-    if (selectedCity !== "All")
-      result = result.filter((s) => s.city === selectedCity);
-    if (selectedCategory !== "All")
-      result = result.filter((s) => s.category === selectedCategory);
+  const salons = data?.salons || [];
 
-    if (selectedRating !== "All") {
-      const minRating = parseFloat(selectedRating.replace("+", ""));
-      result = result.filter((s) => s.rating >= minRating);
-    }
-
-    if (sortBy === "Rating") result.sort((a, b) => b.rating - a.rating);
-    else if (sortBy === "Price: Low to High")
-      result.sort((a, b) => a.price - b.price);
-    else if (sortBy === "Price: High to Low")
-      result.sort((a, b) => b.price - a.price);
-
-    return result;
-  }, [search, selectedCity, selectedCategory, selectedRating, sortBy]);
+  // Client side sorting if requested
+  const sortedSalons = [...salons];
+  if (sortBy === "Rating") {
+    sortedSalons.sort((a, b) => b.avgRating - a.avgRating);
+  }
 
   const clearFilters = () => {
     setSearch("");
+    setDebouncedSearch("");
     setSelectedCity("All");
     setSelectedCategory("All");
     setSelectedRating("All");
@@ -99,7 +109,7 @@ export default function SalonsPage() {
             transition={{ delay: 0.05 }}
             className="text-zinc-500 mb-6"
           >
-            {SALONS_DATA.length} salons across {CITIES_DATA.length} cities
+            {salons.length} salons found dynamically
           </motion.p>
 
           {/* Search Bar */}
@@ -233,7 +243,7 @@ export default function SalonsPage() {
         <div className="flex items-center justify-between mb-6">
           <p className="text-sm text-zinc-500">
             <span className="font-semibold text-zinc-900">
-              {filtered.length}
+              {sortedSalons.length}
             </span>{" "}
             salons found
           </p>
@@ -251,8 +261,22 @@ export default function SalonsPage() {
           </div>
         </div>
 
-        {/* Salon Cards Grid */}
-        {filtered.length === 0 ? (
+        {/* Loading / Error States */}
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center py-32 text-zinc-400">
+            <Loader2 className="animate-spin text-rose-500 mb-4" size={36} />
+            <p className="text-sm font-medium">Fetching best salons...</p>
+          </div>
+        ) : isError ? (
+          <div className="text-center py-24">
+            <p className="text-4xl mb-4">⚠️</p>
+            <p className="text-zinc-600 font-medium mb-1">Failed to fetch salons</p>
+            <p className="text-zinc-400 text-sm mb-4">Please check if the backend service is running.</p>
+            <Button variant="outline" onClick={clearFilters}>
+              Retry
+            </Button>
+          </div>
+        ) : sortedSalons.length === 0 ? (
           <div className="text-center py-24">
             <p className="text-4xl mb-4">🔍</p>
             <p className="text-zinc-600 font-medium mb-1">No salons found</p>
@@ -265,22 +289,31 @@ export default function SalonsPage() {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((salon, i) => (
+            {sortedSalons.map((salon, i) => (
               <motion.div
                 key={salon.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.06 }}
+                transition={{ delay: i * 0.04 }}
               >
                 <Link href={`/salons/${salon.slug}`} className="block group">
                   <div className="bg-white rounded-2xl border border-zinc-100 hover:shadow-lg transition-all duration-300 overflow-hidden">
                     {/* Image placeholder */}
                     <div className="h-44 bg-linear-to-br from-zinc-100 to-zinc-200 relative">
+                      {salon.coverImageUrl && (
+                        <img
+                          src={salon.coverImageUrl}
+                          alt={salon.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      )}
                       <div className="absolute top-3 left-3 bg-white text-xs font-medium text-zinc-600 px-2 py-1 rounded-full shadow-sm">
-                        {salon.category}
+                        {salon.category || "Salon & Spa"}
                       </div>
                       <div
-                        className={`absolute top-3 right-3 text-xs font-medium px-2 py-1 rounded-full ${salon.isOpen ? "bg-green-100 text-green-700" : "bg-zinc-100 text-zinc-500"}`}
+                        className={`absolute top-3 right-3 text-xs font-medium px-2 py-1 rounded-full ${
+                          salon.isOpen ? "bg-green-100 text-green-700" : "bg-zinc-100 text-zinc-500"
+                        }`}
                       >
                         {salon.isOpen ? "Open" : "Closed"}
                       </div>
@@ -294,18 +327,18 @@ export default function SalonsPage() {
                         </h3>
                         <div className="flex items-center gap-1 text-amber-500 text-sm font-semibold shrink-0 ml-2">
                           <Star size={13} fill="currentColor" />
-                          {salon.rating}
+                          {salon.avgRating}
                         </div>
                       </div>
 
                       <div className="flex items-center gap-1 text-zinc-400 text-xs mb-3">
                         <MapPin size={11} />
-                        {salon.city} · {salon.reviews} reviews
+                        {salon.city} · {salon.reviewsCount || 0} reviews
                       </div>
 
                       {/* Tags */}
                       <div className="flex flex-wrap gap-1 mb-4">
-                        {salon.tags.slice(0, 3).map((tag) => (
+                        {(salon.tags || ["Haircut", "Grooming"]).slice(0, 3).map((tag) => (
                           <span
                             key={tag}
                             className="text-xs bg-zinc-100 text-zinc-500 px-2 py-0.5 rounded-full"
@@ -317,7 +350,7 @@ export default function SalonsPage() {
 
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-medium text-zinc-700">
-                          {salon.priceLabel}
+                          {salon.priceLabel || `₹${salon.price || 500} onwards`}
                         </span>
                         <Button
                           size="sm"

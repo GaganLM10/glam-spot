@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import Providers from "@/components/providers";
 
 const geist = Geist({ subsets: ["latin"] });
 
@@ -15,9 +16,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${geist.className} antialiased`}>
-        <Header />
-        <main className="pt-16">{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main className="pt-16">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

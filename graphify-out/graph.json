@@ -9,7 +9,7 @@
       "source_file": "eslint.config.mjs",
       "source_location": "L1",
       "id": "eslint_config_mjs",
-      "community": 7,
+      "community": 13,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -17,8 +17,8 @@
       "file_type": "code",
       "source_file": "eslint.config.mjs",
       "source_location": "L5",
-      "id": "salon_haven_main_eslint_config_eslintconfig",
-      "community": 7,
+      "id": "frontend_eslint_config_eslintconfig",
+      "community": 13,
       "norm_label": "eslintconfig"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "next-env.d.ts",
       "source_location": "L1",
       "id": "next_env_d_ts",
-      "community": 11,
+      "community": 17,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "id": "next_config_ts",
-      "community": 8,
+      "community": 14,
       "norm_label": "next.config.ts"
     },
     {
@@ -44,8 +44,8 @@
       "file_type": "code",
       "source_file": "next.config.ts",
       "source_location": "L3",
-      "id": "salon_haven_main_next_config_nextconfig",
-      "community": 8,
+      "id": "frontend_next_config_nextconfig",
+      "community": 14,
       "norm_label": "nextconfig"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "id": "postcss_config_mjs",
-      "community": 9,
+      "community": 15,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -62,8 +62,8 @@
       "file_type": "code",
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
-      "id": "salon_haven_main_postcss_config_config",
-      "community": 9,
+      "id": "frontend_postcss_config_config",
+      "community": 15,
       "norm_label": "config"
     },
     {
@@ -79,7 +79,7 @@
       "label": "geist",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "app_layout_geist",
       "community": 4,
       "norm_label": "geist"
@@ -88,7 +88,7 @@
       "label": "metadata",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "app_layout_metadata",
       "community": 4,
       "norm_label": "metadata"
@@ -97,7 +97,7 @@
       "label": "RootLayout()",
       "file_type": "code",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "app_layout_rootlayout",
       "community": 4,
       "norm_label": "rootlayout()"
@@ -108,7 +108,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L1",
       "id": "src_app_page_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "page.tsx"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L11",
       "id": "app_page_homepage",
-      "community": 2,
+      "community": 3,
       "norm_label": "homepage()"
     },
     {
@@ -153,26 +153,44 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L1",
       "id": "src_app_auth_page_tsx",
-      "community": 1,
+      "community": 10,
       "norm_label": "page.tsx"
     },
     {
       "label": "Tab",
       "file_type": "code",
       "source_file": "src/app/auth/page.tsx",
-      "source_location": "L10",
+      "source_location": "L14",
       "id": "auth_page_tab",
-      "community": 1,
+      "community": 10,
       "norm_label": "tab"
     },
     {
       "label": "AuthPage()",
       "file_type": "code",
       "source_file": "src/app/auth/page.tsx",
-      "source_location": "L12",
+      "source_location": "L16",
       "id": "auth_page_authpage",
-      "community": 1,
+      "community": 10,
       "norm_label": "authpage()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L1",
+      "id": "src_app_bookings_page_tsx",
+      "community": 6,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "BookingsPage()",
+      "file_type": "code",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L13",
+      "id": "bookings_page_bookingspage",
+      "community": 6,
+      "norm_label": "bookingspage()"
     },
     {
       "label": "page.tsx",
@@ -180,7 +198,7 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L1",
       "id": "src_app_cities_page_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "page.tsx"
     },
     {
@@ -189,7 +207,7 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L8",
       "id": "cities_page_citiespage",
-      "community": 3,
+      "community": 2,
       "norm_label": "citiespage()"
     },
     {
@@ -243,34 +261,34 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L1",
       "id": "src_app_salons_page_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "page.tsx"
     },
     {
       "label": "CATEGORIES",
       "file_type": "code",
       "source_file": "src/app/salons/page.tsx",
-      "source_location": "L10",
+      "source_location": "L12",
       "id": "salons_page_categories",
-      "community": 3,
+      "community": 2,
       "norm_label": "categories"
     },
     {
       "label": "RATINGS",
       "file_type": "code",
       "source_file": "src/app/salons/page.tsx",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "salons_page_ratings",
-      "community": 3,
+      "community": 2,
       "norm_label": "ratings"
     },
     {
       "label": "SORT_OPTIONS",
       "file_type": "code",
       "source_file": "src/app/salons/page.tsx",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "salons_page_sort_options",
-      "community": 3,
+      "community": 2,
       "norm_label": "sort_options"
     },
     {
@@ -279,7 +297,7 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L27",
       "id": "salons_page_salonspage",
-      "community": 3,
+      "community": 2,
       "norm_label": "salonspage()"
     },
     {
@@ -288,16 +306,16 @@
       "source_file": "src/app/salons/[slug]/page.tsx",
       "source_location": "L1",
       "id": "src_app_salons_slug_page_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
       "label": "SalonDetailPage()",
       "file_type": "code",
       "source_file": "src/app/salons/[slug]/page.tsx",
-      "source_location": "L18",
+      "source_location": "L25",
       "id": "slug_page_salondetailpage",
-      "community": 1,
+      "community": 6,
       "norm_label": "salondetailpage()"
     },
     {
@@ -306,7 +324,7 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L1",
       "id": "src_app_services_page_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "page.tsx"
     },
     {
@@ -315,7 +333,7 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L10",
       "id": "services_page_servicespage",
-      "community": 3,
+      "community": 2,
       "norm_label": "servicespage()"
     },
     {
@@ -344,6 +362,24 @@
       "id": "terms_page_termspage",
       "community": 0,
       "norm_label": "termspage()"
+    },
+    {
+      "label": "providers.tsx",
+      "file_type": "code",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L1",
+      "id": "src_components_providers_tsx",
+      "community": 7,
+      "norm_label": "providers.tsx"
+    },
+    {
+      "label": "Providers()",
+      "file_type": "code",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L7",
+      "id": "components_providers_providers",
+      "community": 7,
+      "norm_label": "providers()"
     },
     {
       "label": "CitiesSection.tsx",
@@ -414,25 +450,25 @@
       "source_file": "src/components/common/Header.tsx",
       "source_location": "L1",
       "id": "src_components_common_header_tsx",
-      "community": 4,
+      "community": 12,
       "norm_label": "header.tsx"
     },
     {
       "label": "NAV_LINKS",
       "file_type": "code",
       "source_file": "src/components/common/Header.tsx",
-      "source_location": "L10",
+      "source_location": "L13",
       "id": "common_header_nav_links",
-      "community": 4,
+      "community": 12,
       "norm_label": "nav_links"
     },
     {
       "label": "Header()",
       "file_type": "code",
       "source_file": "src/components/common/Header.tsx",
-      "source_location": "L17",
+      "source_location": "L20",
       "id": "common_header_header",
-      "community": 4,
+      "community": 12,
       "norm_label": "header()"
     },
     {
@@ -459,7 +495,7 @@
       "source_file": "src/components/common/HowItWorksSection.tsx",
       "source_location": "L1",
       "id": "src_components_common_howitworkssection_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "howitworkssection.tsx"
     },
     {
@@ -468,7 +504,7 @@
       "source_file": "src/components/common/HowItWorksSection.tsx",
       "source_location": "L6",
       "id": "common_howitworkssection_steps",
-      "community": 2,
+      "community": 3,
       "norm_label": "steps"
     },
     {
@@ -477,7 +513,7 @@
       "source_file": "src/components/common/HowItWorksSection.tsx",
       "source_location": "L12",
       "id": "common_howitworkssection_howitworkssection",
-      "community": 2,
+      "community": 3,
       "norm_label": "howitworkssection()"
     },
     {
@@ -522,7 +558,7 @@
       "source_file": "src/components/common/StatsSection.tsx",
       "source_location": "L1",
       "id": "src_components_common_statssection_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "statssection.tsx"
     },
     {
@@ -531,7 +567,7 @@
       "source_file": "src/components/common/StatsSection.tsx",
       "source_location": "L6",
       "id": "common_statssection_stats",
-      "community": 2,
+      "community": 3,
       "norm_label": "stats"
     },
     {
@@ -540,7 +576,7 @@
       "source_file": "src/components/common/StatsSection.tsx",
       "source_location": "L13",
       "id": "common_statssection_statssection",
-      "community": 2,
+      "community": 3,
       "norm_label": "statssection()"
     },
     {
@@ -549,7 +585,7 @@
       "source_file": "src/components/common/TestimonialsSection.tsx",
       "source_location": "L1",
       "id": "src_components_common_testimonialssection_tsx",
-      "community": 2,
+      "community": 3,
       "norm_label": "testimonialssection.tsx"
     },
     {
@@ -558,7 +594,7 @@
       "source_file": "src/components/common/TestimonialsSection.tsx",
       "source_location": "L6",
       "id": "common_testimonialssection_testimonials",
-      "community": 2,
+      "community": 3,
       "norm_label": "testimonials"
     },
     {
@@ -567,7 +603,7 @@
       "source_file": "src/components/common/TestimonialsSection.tsx",
       "source_location": "L12",
       "id": "common_testimonialssection_testimonialssection",
-      "community": 2,
+      "community": 3,
       "norm_label": "testimonialssection()"
     },
     {
@@ -576,25 +612,16 @@
       "source_file": "src/components/common/TopSalonsSection.tsx",
       "source_location": "L1",
       "id": "src_components_common_topsalonssection_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "topsalonssection.tsx"
-    },
-    {
-      "label": "SALONS",
-      "file_type": "code",
-      "source_file": "src/components/common/TopSalonsSection.tsx",
-      "source_location": "L7",
-      "id": "common_topsalonssection_salons",
-      "community": 2,
-      "norm_label": "salons"
     },
     {
       "label": "TopSalonsSection()",
       "file_type": "code",
       "source_file": "src/components/common/TopSalonsSection.tsx",
-      "source_location": "L16",
+      "source_location": "L10",
       "id": "common_topsalonssection_topsalonssection",
-      "community": 2,
+      "community": 1,
       "norm_label": "topsalonssection()"
     },
     {
@@ -623,6 +650,168 @@
       "id": "ui_button_button",
       "community": 1,
       "norm_label": "button()"
+    },
+    {
+      "label": "api-client.ts",
+      "file_type": "code",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L1",
+      "id": "src_lib_api_client_ts",
+      "community": 8,
+      "norm_label": "api-client.ts"
+    },
+    {
+      "label": "apiClient",
+      "file_type": "code",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L4",
+      "id": "lib_api_client_apiclient",
+      "community": 8,
+      "norm_label": "apiclient"
+    },
+    {
+      "label": "failedQueue",
+      "file_type": "code",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L30",
+      "id": "lib_api_client_failedqueue",
+      "community": 8,
+      "norm_label": "failedqueue"
+    },
+    {
+      "label": "processQueue()",
+      "file_type": "code",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L32",
+      "id": "lib_api_client_processqueue",
+      "community": 8,
+      "norm_label": "processqueue()"
+    },
+    {
+      "label": "{ user, setAuth }",
+      "file_type": "code",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L95",
+      "id": "lib_api_client_user_setauth",
+      "community": 8,
+      "norm_label": "{ user, setauth }"
+    },
+    {
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L1",
+      "id": "src_lib_api_ts",
+      "community": 5,
+      "norm_label": "api.ts"
+    },
+    {
+      "label": "Salon",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L5",
+      "id": "lib_api_salon",
+      "community": 5,
+      "norm_label": "salon"
+    },
+    {
+      "label": "Service",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L30",
+      "id": "lib_api_service",
+      "community": 5,
+      "norm_label": "service"
+    },
+    {
+      "label": "Staff",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L39",
+      "id": "lib_api_staff",
+      "community": 5,
+      "norm_label": "staff"
+    },
+    {
+      "label": "Review",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L46",
+      "id": "lib_api_review",
+      "community": 5,
+      "norm_label": "review"
+    },
+    {
+      "label": "Booking",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L57",
+      "id": "lib_api_booking",
+      "community": 5,
+      "norm_label": "booking"
+    },
+    {
+      "label": "authApi",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L82",
+      "id": "lib_api_authapi",
+      "community": 10,
+      "norm_label": "authapi"
+    },
+    {
+      "label": "salonsApi",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L108",
+      "id": "lib_api_salonsapi",
+      "community": 1,
+      "norm_label": "salonsapi"
+    },
+    {
+      "label": "bookingsApi",
+      "file_type": "code",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L133",
+      "id": "lib_api_bookingsapi",
+      "community": 6,
+      "norm_label": "bookingsapi"
+    },
+    {
+      "label": "auth-store.ts",
+      "file_type": "code",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L1",
+      "id": "src_lib_auth_store_ts",
+      "community": 7,
+      "norm_label": "auth-store.ts"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L3",
+      "id": "lib_auth_store_user",
+      "community": 7,
+      "norm_label": "user"
+    },
+    {
+      "label": "AuthState",
+      "file_type": "code",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L13",
+      "id": "lib_auth_store_authstate",
+      "community": 7,
+      "norm_label": "authstate"
+    },
+    {
+      "label": "useAuthStore",
+      "file_type": "code",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L22",
+      "id": "lib_auth_store_useauthstore",
+      "community": 6,
+      "norm_label": "useauthstore"
     },
     {
       "label": "constants.ts",
@@ -666,7 +855,7 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L1",
       "id": "src_lib_data_ts",
-      "community": 3,
+      "community": 2,
       "norm_label": "data.ts"
     },
     {
@@ -675,7 +864,7 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L3",
       "id": "lib_data_salons_data",
-      "community": 3,
+      "community": 2,
       "norm_label": "salons_data"
     },
     {
@@ -684,7 +873,7 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L321",
       "id": "lib_data_services_data",
-      "community": 3,
+      "community": 2,
       "norm_label": "services_data"
     },
     {
@@ -693,7 +882,7 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L408",
       "id": "lib_data_cities_data",
-      "community": 3,
+      "community": 2,
       "norm_label": "cities_data"
     },
     {
@@ -720,7 +909,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L1",
       "id": "src_types_index_ts",
-      "community": 6,
+      "community": 11,
       "norm_label": "index.ts"
     },
     {
@@ -729,7 +918,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L1",
       "id": "types_index_service",
-      "community": 6,
+      "community": 11,
       "norm_label": "service"
     },
     {
@@ -738,7 +927,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L7",
       "id": "types_index_city",
-      "community": 6,
+      "community": 11,
       "norm_label": "city"
     },
     {
@@ -747,7 +936,7 @@
       "source_file": "src/types/index.ts",
       "source_location": "L14",
       "id": "types_index_offer",
-      "community": 6,
+      "community": 11,
       "norm_label": "offer"
     },
     {
@@ -756,7 +945,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 10,
+      "community": 16,
       "norm_label": "agents.md"
     },
     {
@@ -764,8 +953,8 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L2",
-      "id": "salon_haven_main_agents_this_is_not_the_next_js_you_know",
-      "community": 10,
+      "id": "frontend_agents_this_is_not_the_next_js_you_know",
+      "community": 16,
       "norm_label": "this is not the next.js you know"
     },
     {
@@ -774,7 +963,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 12,
+      "community": 18,
       "norm_label": "claude.md"
     },
     {
@@ -783,7 +972,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 5,
+      "community": 9,
       "norm_label": "readme.md"
     },
     {
@@ -791,8 +980,8 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L3",
-      "id": "salon_haven_main_readme_getting_started",
-      "community": 5,
+      "id": "frontend_readme_getting_started",
+      "community": 9,
       "norm_label": "getting started"
     },
     {
@@ -800,8 +989,8 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
-      "id": "salon_haven_main_readme_codeblock_1",
-      "community": 5,
+      "id": "frontend_readme_codeblock_1",
+      "community": 9,
       "norm_label": "code:bash (npm run dev)"
     },
     {
@@ -809,8 +998,8 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L23",
-      "id": "salon_haven_main_readme_learn_more",
-      "community": 5,
+      "id": "frontend_readme_learn_more",
+      "community": 9,
       "norm_label": "learn more"
     },
     {
@@ -818,9 +1007,18 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L32",
-      "id": "salon_haven_main_readme_deploy_on_vercel",
-      "community": 5,
+      "id": "frontend_readme_deploy_on_vercel",
+      "community": 9,
       "norm_label": "deploy on vercel"
+    },
+    {
+      "label": "SALONS",
+      "file_type": "code",
+      "source_file": "src/components/common/TopSalonsSection.tsx",
+      "source_location": "L7",
+      "community": 1,
+      "norm_label": "salons",
+      "id": "common_topsalonssection_salons"
     }
   ],
   "links": [
@@ -832,7 +1030,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "eslint_config_mjs",
-      "target": "salon_haven_main_eslint_config_eslintconfig"
+      "target": "frontend_eslint_config_eslintconfig"
     },
     {
       "relation": "contains",
@@ -842,7 +1040,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "next_config_ts",
-      "target": "salon_haven_main_next_config_nextconfig"
+      "target": "frontend_next_config_nextconfig"
     },
     {
       "relation": "contains",
@@ -852,7 +1050,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "postcss_config_mjs",
-      "target": "salon_haven_main_postcss_config_config"
+      "target": "frontend_postcss_config_config"
     },
     {
       "relation": "imports_from",
@@ -1022,9 +1220,9 @@
       "source_file": "src/app/about/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_about_page_tsx",
-      "target": "src_lib_constants_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_constants_ts"
     },
     {
       "relation": "contains",
@@ -1032,9 +1230,9 @@
       "source_file": "src/app/about/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_about_page_tsx",
-      "target": "about_page_stats",
-      "confidence_score": 1.0
+      "target": "about_page_stats"
     },
     {
       "relation": "contains",
@@ -1042,9 +1240,9 @@
       "source_file": "src/app/about/page.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_about_page_tsx",
-      "target": "about_page_aboutpage",
-      "confidence_score": 1.0
+      "target": "about_page_aboutpage"
     },
     {
       "relation": "imports_from",
@@ -1053,9 +1251,9 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_auth_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1064,9 +1262,9 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_auth_page_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -1075,9 +1273,42 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_auth_page_tsx",
-      "target": "src_lib_constants_ts",
+      "target": "src_lib_constants_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/auth/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_app_auth_page_tsx",
+      "target": "lib_auth_store_useauthstore",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/auth/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_auth_page_tsx",
+      "target": "src_lib_api_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/auth/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_auth_page_tsx",
+      "target": "lib_api_authapi"
     },
     {
       "relation": "contains",
@@ -1085,9 +1316,9 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_auth_page_tsx",
-      "target": "auth_page_tab",
-      "confidence_score": 1.0
+      "target": "auth_page_tab"
     },
     {
       "relation": "contains",
@@ -1095,9 +1326,107 @@
       "source_file": "src/app/auth/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_auth_page_tsx",
-      "target": "auth_page_authpage",
+      "target": "auth_page_authpage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/auth/page.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "auth_page_authpage",
+      "target": "lib_auth_store_useauthstore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "src_components_ui_button_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "ui_button_button"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "src_lib_auth_store_ts",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "lib_auth_store_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "src_lib_api_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "lib_api_bookingsapi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_bookings_page_tsx",
+      "target": "bookings_page_bookingspage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/bookings/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "bookings_page_bookingspage",
+      "target": "lib_auth_store_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -1106,9 +1435,9 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_cities_page_tsx",
-      "target": "src_lib_data_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_data_ts"
     },
     {
       "relation": "imports",
@@ -1117,9 +1446,9 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_cities_page_tsx",
-      "target": "lib_data_cities_data",
-      "confidence_score": 1.0
+      "target": "lib_data_cities_data"
     },
     {
       "relation": "imports",
@@ -1128,9 +1457,9 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_cities_page_tsx",
-      "target": "lib_data_salons_data",
-      "confidence_score": 1.0
+      "target": "lib_data_salons_data"
     },
     {
       "relation": "contains",
@@ -1138,9 +1467,9 @@
       "source_file": "src/app/cities/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_cities_page_tsx",
-      "target": "cities_page_citiespage",
-      "confidence_score": 1.0
+      "target": "cities_page_citiespage"
     },
     {
       "relation": "imports_from",
@@ -1149,9 +1478,9 @@
       "source_file": "src/app/contact/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_contact_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1160,9 +1489,9 @@
       "source_file": "src/app/contact/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_contact_page_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -1171,9 +1500,9 @@
       "source_file": "src/app/contact/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_contact_page_tsx",
-      "target": "src_lib_constants_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_constants_ts"
     },
     {
       "relation": "contains",
@@ -1181,9 +1510,9 @@
       "source_file": "src/app/contact/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_contact_page_tsx",
-      "target": "contact_page_contactpage",
-      "confidence_score": 1.0
+      "target": "contact_page_contactpage"
     },
     {
       "relation": "imports_from",
@@ -1192,9 +1521,9 @@
       "source_file": "src/app/privacy/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_privacy_page_tsx",
-      "target": "src_lib_constants_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_constants_ts"
     },
     {
       "relation": "contains",
@@ -1202,9 +1531,9 @@
       "source_file": "src/app/privacy/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_privacy_page_tsx",
-      "target": "privacy_page_sections",
-      "confidence_score": 1.0
+      "target": "privacy_page_sections"
     },
     {
       "relation": "contains",
@@ -1212,9 +1541,9 @@
       "source_file": "src/app/privacy/page.tsx",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_privacy_page_tsx",
-      "target": "privacy_page_privacypage",
-      "confidence_score": 1.0
+      "target": "privacy_page_privacypage"
     },
     {
       "relation": "imports_from",
@@ -1223,9 +1552,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1234,9 +1563,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -1245,9 +1574,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "src_lib_data_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_data_ts"
     },
     {
       "relation": "imports",
@@ -1256,20 +1585,31 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "lib_data_salons_data",
-      "confidence_score": 1.0
+      "target": "lib_data_cities_data"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_salons_page_tsx",
+      "target": "src_lib_api_ts"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/salons/page.tsx",
-      "source_location": "L8",
+      "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "lib_data_cities_data",
-      "confidence_score": 1.0
+      "target": "lib_api_salonsapi"
     },
     {
       "relation": "contains",
@@ -1277,9 +1617,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "salons_page_categories",
-      "confidence_score": 1.0
+      "target": "salons_page_categories"
     },
     {
       "relation": "contains",
@@ -1287,9 +1627,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "salons_page_ratings",
-      "confidence_score": 1.0
+      "target": "salons_page_ratings"
     },
     {
       "relation": "contains",
@@ -1297,9 +1637,9 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "salons_page_sort_options",
-      "confidence_score": 1.0
+      "target": "salons_page_sort_options"
     },
     {
       "relation": "contains",
@@ -1307,9 +1647,20 @@
       "source_file": "src/app/salons/page.tsx",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_page_tsx",
-      "target": "salons_page_salonspage",
-      "confidence_score": 1.0
+      "target": "salons_page_salonspage"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_salons_page_tsx",
+      "target": "lib_data_salons_data"
     },
     {
       "relation": "imports_from",
@@ -1318,9 +1669,9 @@
       "source_file": "src/app/salons/[slug]/page.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_slug_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1329,8 +1680,19 @@
       "source_file": "src/app/salons/[slug]/page.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_slug_page_tsx",
-      "target": "ui_button_button",
+      "target": "ui_button_button"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/[slug]/page.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_app_salons_slug_page_tsx",
+      "target": "lib_auth_store_useauthstore",
       "confidence_score": 1.0
     },
     {
@@ -1338,22 +1700,33 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/salons/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_slug_page_tsx",
-      "target": "src_lib_data_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_api_ts"
     },
     {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/app/salons/[slug]/page.tsx",
-      "source_location": "L16",
+      "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_slug_page_tsx",
-      "target": "lib_data_salons_data",
-      "confidence_score": 1.0
+      "target": "lib_api_salonsapi"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/[slug]/page.tsx",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_salons_slug_page_tsx",
+      "target": "lib_api_bookingsapi"
     },
     {
       "relation": "contains",
@@ -1361,9 +1734,42 @@
       "source_file": "src/app/salons/[slug]/page.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_salons_slug_page_tsx",
-      "target": "slug_page_salondetailpage",
-      "confidence_score": 1.0
+      "target": "slug_page_salondetailpage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/[slug]/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_salons_slug_page_tsx",
+      "target": "src_lib_data_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/salons/[slug]/page.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_salons_slug_page_tsx",
+      "target": "lib_data_salons_data"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/salons/[slug]/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "slug_page_salondetailpage",
+      "target": "lib_auth_store_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -1372,9 +1778,9 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_services_page_tsx",
-      "target": "src_lib_data_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_data_ts"
     },
     {
       "relation": "imports",
@@ -1383,9 +1789,9 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_services_page_tsx",
-      "target": "lib_data_services_data",
-      "confidence_score": 1.0
+      "target": "lib_data_services_data"
     },
     {
       "relation": "imports",
@@ -1394,9 +1800,9 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_services_page_tsx",
-      "target": "lib_data_salons_data",
-      "confidence_score": 1.0
+      "target": "lib_data_salons_data"
     },
     {
       "relation": "contains",
@@ -1404,9 +1810,9 @@
       "source_file": "src/app/services/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_services_page_tsx",
-      "target": "services_page_servicespage",
-      "confidence_score": 1.0
+      "target": "services_page_servicespage"
     },
     {
       "relation": "imports_from",
@@ -1415,9 +1821,9 @@
       "source_file": "src/app/terms/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_terms_page_tsx",
-      "target": "src_lib_constants_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_constants_ts"
     },
     {
       "relation": "contains",
@@ -1425,9 +1831,9 @@
       "source_file": "src/app/terms/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_terms_page_tsx",
-      "target": "terms_page_sections",
-      "confidence_score": 1.0
+      "target": "terms_page_sections"
     },
     {
       "relation": "contains",
@@ -1435,8 +1841,40 @@
       "source_file": "src/app/terms/page.tsx",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_terms_page_tsx",
-      "target": "terms_page_termspage",
+      "target": "terms_page_termspage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_providers_tsx",
+      "target": "src_lib_auth_store_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_providers_tsx",
+      "target": "lib_auth_store_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/providers.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_providers_tsx",
+      "target": "components_providers_providers",
       "confidence_score": 1.0
     },
     {
@@ -1520,15 +1958,15 @@
       "source_file": "src/components/common/Footer.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_common_footer_tsx",
-      "target": "common_footer_footer_links",
-      "confidence_score": 1.0
+      "target": "common_footer_footer_links"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/common/Footer.tsx",
-      "source_location": "L5",
+      "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_common_footer_tsx",
@@ -1568,14 +2006,48 @@
       "target": "src_lib_constants_ts"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/Header.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_common_header_tsx",
+      "target": "src_lib_auth_store_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/Header.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_common_header_tsx",
+      "target": "lib_auth_store_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/common/Header.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_common_header_tsx",
-      "target": "common_header_nav_links",
-      "confidence_score": 1.0
+      "target": "src_lib_api_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/Header.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_common_header_tsx",
+      "target": "lib_api_authapi"
     },
     {
       "relation": "contains",
@@ -1585,7 +2057,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_common_header_tsx",
+      "target": "common_header_nav_links"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/Header.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_common_header_tsx",
       "target": "common_header_header"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/common/Header.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "common_header_header",
+      "target": "lib_auth_store_useauthstore"
     },
     {
       "relation": "imports_from",
@@ -1788,14 +2281,26 @@
       "target": "ui_button_button"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/common/TopSalonsSection.tsx",
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_components_common_topsalonssection_tsx",
-      "target": "common_topsalonssection_salons"
+      "target": "src_lib_api_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/TopSalonsSection.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_common_topsalonssection_tsx",
+      "target": "lib_api_salonsapi"
     },
     {
       "relation": "contains",
@@ -1806,6 +2311,16 @@
       "confidence_score": 1.0,
       "source": "src_components_common_topsalonssection_tsx",
       "target": "common_topsalonssection_topsalonssection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/common/TopSalonsSection.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_common_topsalonssection_tsx",
+      "target": "common_topsalonssection_salons"
     },
     {
       "relation": "imports_from",
@@ -1872,6 +2387,222 @@
       "target": "lib_utils_cn"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "src_lib_auth_store_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "lib_auth_store_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "lib_api_client_apiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "lib_api_client_failedqueue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "lib_api_client_processqueue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api-client.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "src_lib_api_client_ts",
+      "target": "lib_api_client_user_setauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "src_lib_api_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_client_apiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "src_lib_auth_store_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_auth_store_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_salon"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_service"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_staff"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_review"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_booking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_authapi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L107",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_salonsapi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/api.ts",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_api_ts",
+      "target": "lib_api_bookingsapi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_auth_store_ts",
+      "target": "lib_auth_store_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_lib_auth_store_ts",
+      "target": "lib_auth_store_authstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/auth-store.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_lib_auth_store_ts",
+      "target": "lib_auth_store_useauthstore",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/constants.ts",
@@ -1907,9 +2638,9 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_data_ts",
-      "target": "lib_data_salons_data",
-      "confidence_score": 1.0
+      "target": "lib_data_salons_data"
     },
     {
       "relation": "contains",
@@ -1917,9 +2648,9 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L321",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_data_ts",
-      "target": "lib_data_services_data",
-      "confidence_score": 1.0
+      "target": "lib_data_services_data"
     },
     {
       "relation": "contains",
@@ -1927,9 +2658,9 @@
       "source_file": "src/lib/data.ts",
       "source_location": "L408",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_data_ts",
-      "target": "lib_data_cities_data",
-      "confidence_score": 1.0
+      "target": "lib_data_cities_data"
     },
     {
       "relation": "contains",
@@ -1979,7 +2710,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "agents_md",
-      "target": "salon_haven_main_agents_this_is_not_the_next_js_you_know"
+      "target": "frontend_agents_this_is_not_the_next_js_you_know"
     },
     {
       "relation": "contains",
@@ -1989,7 +2720,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "salon_haven_main_readme_getting_started"
+      "target": "frontend_readme_getting_started"
     },
     {
       "relation": "contains",
@@ -1999,7 +2730,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "salon_haven_main_readme_learn_more"
+      "target": "frontend_readme_learn_more"
     },
     {
       "relation": "contains",
@@ -2009,7 +2740,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "salon_haven_main_readme_deploy_on_vercel"
+      "target": "frontend_readme_deploy_on_vercel"
     },
     {
       "relation": "contains",
@@ -2018,10 +2749,10 @@
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "salon_haven_main_readme_getting_started",
-      "target": "salon_haven_main_readme_codeblock_1"
+      "source": "frontend_readme_getting_started",
+      "target": "frontend_readme_codeblock_1"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b171f81b8fdc93271e404f0aec92de380eefe8d8"
+  "built_at_commit": "1aed9a6c16b160d6abd2c1b93989ea4398d0e416"
 }
